@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/fontawesome-free-5.10.2-web/css/all.min.css">
+	
+	<style type="text/css">
+		body {
+  background-color:#000;
+}
+
+#container {
+
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:center;
+    width: 500px;
+    height: 350px;
+	margin: 150px;
+	margin-left:400px;
+	overflow:visible;
+	background-color: white; 
+}
+
+ .fa-heart{
+	color: #eb6a5b;
+	font-size: 140px;
+	margin: 100px;
+	animation: heart-beat 3s ease-in-out forwards infinite;
+ }
+
+@keyframes heart-beat{
+	10%{ 
+		transform: scale(1);
+		}
+	20%{ 
+		transform: scale(1.4);
+		}
+	30%{ 
+		transform: scale(1.3);
+		}
+	40%{
+		 transform: scale(1.4);
+		}
+	50%{ 
+		transform: scale(1); 
+		}
+	60%{ 
+		transform: scale(1.4);
+		}
+	70%{
+		 transform: scale(1.3);
+		}
+	80%{ 
+		transform: scale(1.4);
+		}
+	90%{ 
+		transform: scale(1);
+		}
+	
+	100%{ 
+		transform: scale(1);
+		}		
+}
+	</style>
+</head>
+<body>
+	<div id="container">
+	<i class="fas fa-heart"></i>
+	</div>
+</body>
+</html>

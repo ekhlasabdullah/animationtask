@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/fontawesome-free-5.10.2-web/css/all.min.css">
+	<title>Fill Mode</title>
+	<style type="text/css">
+		body {
+               background-color:#000;
+             }
+
+       #container {
+
+                display:flex;
+                flex-direction:row;
+                flex-wrap:nowrap;
+               justify-content:center;
+                width: 700px;
+                height: 400px;
+	            margin: 150px;
+	            margin-left:400px;
+	            overflow:visible;
+	            background-color: white;
+  
+                 }
+
+       h2{
+       	color: #bfb8b8;
+       	text-align: center;
+       } 
+
+
+
+
+      #stay{
+	         background-color: #29e6e2;
+	         width: 350px;
+	         height: 20px;
+	         border-radius: 15px;
+	         text-align: center;
+	         padding: 20px;
+	         color: #fff;
+	         font-size: 30px;
+            }
+
+       #back{
+	          background-color:#ff7540;
+	          width: 350px;
+	          height: 20px;
+	          border-radius: 15px;
+	          text-align: center;
+	          padding: 20px;
+	          color: #fff;
+	         font-size: 30px;
+            }
+
+@keyframes zoomin{
+	from{
+		transform: scale(1)
+	}
+	to{
+		transform: scale(1.4);
+	}
+}
+
+.hove:hover #stay{
+	animation: zoomin 2s ease forwards;
+}
+.hove:hover #back{
+	animation: zoomin 2s ease backwards;
+}
+	</style>
+</head>
+<body>
+	<div id="container">
+	    <div class="hove">
+	    <h2>FORWARDS</h2>
+	    <div id="stay">This scales and stays</div>
+	    <br><br><br>
+	    <h2>NORMAL</h2>
+	    <div id="back">This scales and goes back</div>
+	    </div>
+    </div>
+</body>
+</html>
